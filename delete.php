@@ -1,15 +1,16 @@
 <?php
 
-require_once './conn.php';
+require_once'./conn.php';
 
 $id = filter_input(INPUT_GET, 'id');
 
-if($id){
-    $stmt = $conn->prepare("DELETE FROM users WHERE id = :ID");
+echo $id;
 
-    $stmt->bindValue(':ID', $id);
+    //preparar
+    $stmt = $conn->prepare("DELETE FROM users WHERE id = :id");
 
-    $stmt-> execute();
+    //trocar
+    $stmt->bindValue(':id', $id);
 
-    header("Location: index.php");
-}
+    //executar
+    $stmt->execute();
