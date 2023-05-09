@@ -9,20 +9,20 @@
 <body>
     <form action="insert.php" method="post">
         <div>
-            <label for="">Digite o Nome:</label>
+            <label for="">Digite o nome do cliente:</label>
             <input type="text" name="name" id="name">
         </div>
         <div>
-            <label for="">Digite o Email:</label>
-            <input type="text" name="email" id="email">
+            <label for="">Digite o e-mail do cliente:</label>
+            <input type="email" name="email" id="email">
         </div>
         <div>
-            <label for="">Digite seu Endereço:</label>
-            <input type="text" name="address" id="address">
+            <label for="">Digite o endereço do cliente:</label>
+            <input type="address" name="address" id="address">
         </div>
         <div>
-            <label for="">Digite a sua data de anivesário:</label>
-            <input type="text" name="birthday" id="birthday">
+            <label for="">Digite a data de anivesário do cliente:</label>
+            <input type="birthday" name="birthday" id="birthday">
         </div>
         <div>
             <button>Cadastrar</button>
